@@ -6,18 +6,13 @@
   <title>K&A - الصفحة الرئيسية</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .news-ticker {
-      overflow: hidden;
-      white-space: nowrap;
+    @keyframes marquee {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
     }
-    .news-ticker span {
+    .animate-marquee {
       display: inline-block;
-      padding-left: 100%;
-      animation: scroll-left 15s linear infinite;
-    }
-    @keyframes scroll-left {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
+      animation: marquee 20s linear infinite;
     }
   </style>
 </head>
@@ -29,11 +24,13 @@
   </header>
 
   <!-- شريط الأخبار -->
-  <div class="bg-yellow-300 py-2 px-4 news-ticker text-sm font-semibold text-red-700">
-    <span>منتخب مصر يتأهل إلى الدور الرئيسي
-لبطولة كأس العالم لكرة اليد للشباب تحت 19 سنة  بعد الفوز على البحرين 36-28 في الجولة الثانية من البطولة 🏆 </span>
+  <div class="bg-red-600 text-white py-2 overflow-hidden relative" dir="ltr">
+    <div class="whitespace-nowrap animate-marquee text-sm font-semibold px-4">
+      📢 تنبيه هام: عروض خاصة بمناسبة بداية الموسم الجديد - تابعنا لمعرفة التفاصيل 📢
+    </div>
   </div>
 
+  <!-- المحتوى الرئيسي -->
   <main class="p-6 max-w-6xl mx-auto text-right mt-6">
 
     <!-- الأقسام الرئيسية -->
@@ -57,34 +54,39 @@
       </a>
     </div>
 
-    <!-- السوشيال ميديا -->
+    <!-- قسم وسائل التواصل -->
     <section class="mt-14">
       <h2 class="text-xl font-semibold text-blue-900 mb-4 text-center">مواقع التواصل الاجتماعى</h2>
       <div class="flex flex-wrap justify-center gap-2">
-        <a href="https://www.facebook.com/share/16vqVcDa3h/" target="_blank" class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
+        <a href="https://www.facebook.com/share/16vqVcDa3h/" target="_blank"
+           class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="فيسبوك" class="w-10 h-10 mx-auto mb-1" />
           <div class="text-sm font-semibold">فيسبوك</div>
         </a>
-        <a href="https://wa.me/201113760114" target="_blank" class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
+        <a href="https://wa.me/201113760114" target="_blank"
+           class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="واتساب" class="w-10 h-10 mx-auto mb-1" />
           <div class="text-sm font-semibold">واتساب</div>
         </a>
-        <a href="https://t.me/YourTelegram" target="_blank" class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
+        <a href="https://t.me/YourTelegram" target="_blank"
+           class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
           <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="تليجرام" class="w-10 h-10 mx-auto mb-1" />
           <div class="text-sm font-semibold">تليجرام</div>
         </a>
-        <a href="https://chat.whatsapp.com/YourGroupLink" target="_blank" class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
+        <a href="https://chat.whatsapp.com/YourGroupLink" target="_blank"
+           class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
           <img src="https://cdn-icons-png.flaticon.com/512/1384/1384007.png" alt="جروب واتساب" class="w-10 h-10 mx-auto mb-1" />
           <div class="text-sm font-semibold">جروب واتساب</div>
         </a>
-        <a href="https://t.me/YourGroupLink" target="_blank" class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
+        <a href="https://t.me/YourGroupLink" target="_blank"
+           class="bg-white shadow-md rounded-xl p-2 w-28 text-center hover:shadow-lg transition">
           <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="جروب تليجرام" class="w-10 h-10 mx-auto mb-1" />
           <div class="text-sm font-semibold">جروب تليجرام</div>
         </a>
       </div>
     </section>
 
-    <!-- الدفع الإلكتروني -->
+    <!-- الدفع -->
     <section class="mt-10 px-6">
       <h2 class="text-xl font-bold text-blue-900 text-center mb-6">وسائل الدفع</h2>
       <div class="flex flex-wrap justify-center gap-3 text-center">
@@ -92,7 +94,8 @@
           <img src="https://j.top4top.io/p_34996ayga1.png" alt="Cash" class="w-14 h-14 mx-auto mb-2">
           <div class="text-base font-semibold text-gray-700">الدفع كاش</div>
         </a>
-        <a href="https://ipn.eg/S/gamalatef1/instapay/4WrqlT" target="_blank" class="bg-white p-4 rounded-xl shadow hover:shadow-md transition w-32">
+        <a href="https://ipn.eg/S/gamalatef1/instapay/4WrqlT" target="_blank"
+           class="bg-white p-4 rounded-xl shadow hover:shadow-md transition w-32">
           <img src="https://l.top4top.io/p_3499prkyi3.png" alt="Instapay" class="w-14 h-14 mx-auto mb-2">
           <div class="text-base font-semibold text-gray-700">Instapay</div>
         </a>
@@ -107,5 +110,3 @@
 
 </body>
 </html>
-
-
