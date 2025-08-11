@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SUNBLUS - ملف القنوات - K&A</title>
+
+  <!-- خط Cairo -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #071430;
+      --card: #0f2e5d;
+      --accent: #1e90ff; /* أزرق */
+      --muted: #9fb7d8;
+      --gold: #f0c419;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(180deg, var(--bg), #041029 120%);
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, var(--card), #123a63);
+      padding: 18px 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.8rem;
+      box-shadow: 0 4px 14px rgba(2, 6, 23, 0.7);
+      user-select: none;
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 18px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    a.month-card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 20px;
+      width: 100%;
+      max-width: 160px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(30, 144, 255, 0.25);
+      color: var(--accent);
+      text-decoration: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    a.month-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(30, 144, 255, 0.7);
+    }
+
+    a.month-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      background: rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+    a.month-card:hover img {
+      transform: scale(1.05);
+    }
+
+    a.month-card div.month-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-shadow: 0 0 6px rgba(30, 144, 255, 0.8);
+      user-select: none;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        margin: 20px 12px 40px;
+      }
+      a.month-card {
+        max-width: 100%;
+      }
+      a.month-card img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>SUNBLUS - ملف القنوات - K&A</header>
+
+  <main>
+    <a href="https://www.mediafire.com/file/example_link1" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 1" />
+      <div class="month-name">شهر 1</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link2" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 2" />
+      <div class="month-name">شهر 2</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link3" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 3" />
+      <div class="month-name">شهر 3</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link4" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 4" />
+      <div class="month-name">شهر 4</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link5" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 5" />
+      <div class="month-name">شهر 5</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link6" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 6" />
+      <div class="month-name">شهر 6</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link7" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 7" />
+      <div class="month-name">شهر 7</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link8" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 8" />
+      <div class="month-name">شهر 8</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link9" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 9" />
+      <div class="month-name">شهر 9</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link10" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 10" />
+      <div class="month-name">شهر 10</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link11" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 11" />
+      <div class="month-name">شهر 11</div>
+    </a>
+
+    <a href="https://www.mediafire.com/file/example_link12" class="month-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://j.top4top.io/p_3510avrq31.png" alt="شهر 12" />
+      <div class="month-name">شهر 12</div>
+    </a>
+  </main>
+
+</body>
+</html>

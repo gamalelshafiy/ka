@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ملف القنوات</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #0b1d3a;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 28px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .nav-buttons a {
+      background-color: #1e3a5f;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #29558a;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #1e3a5f;
+      padding: 15px;
+      border-radius: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-buttons">
+    <a href="index.html">🏠 الرئيسية</a>
+    <a href="javascript:history.back()">⬅️ السابق</a>
+  </div>
+
+  <h1>ملف القنوات</h1>
+
+  <div class="container">
+    <div class="card">
+      <a href="sunblus.html">
+        <img src="https://j.top4top.io/p_3510avrq31.png" alt="Sunblus">
+        <p>Sunblus</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="vanilla.html">
+        <img src="https://j.top4top.io/p_3510avrq31.png" alt="Vanilla">
+        <p>Vanilla</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="gx.html">
+        <img src="https://j.top4top.io/p_3510avrq31.png" alt="GX">
+        <p>GX</p>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
