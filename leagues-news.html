@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>قريباً - أخبار الدوريات - K&A</title>
+
+  <!-- خط Cairo -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #071430;
+      --card: #0f2e5d;
+      --yellow: #e0b303;
+      --yellow-dark: #c6a502;
+    }
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(180deg, var(--bg), #041029 120%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(90deg, var(--yellow), var(--yellow-dark));
+      padding: 18px 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #001a2b;
+      box-shadow: 0 4px 14px rgba(224,179,3,0.7);
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: var(--card);
+      padding: 40px 30px;
+      border-radius: 16px;
+      max-width: 500px;
+      box-shadow: 0 8px 20px rgba(224,179,3,0.35);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 8px 20px rgba(224,179,3,0.35); }
+      50% { box-shadow: 0 8px 30px rgba(224,179,3,0.7); }
+    }
+    h2 {
+      font-size: 1.6rem;
+      color: var(--yellow);
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .coming-soon {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #00ff90;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>قريباً - جميع أخبار الدوريات الكبرى العالمية والمصرية</header>
+
+  <main>
+    <div class="card">
+      <h2>ترقبوا الجديد!</h2>
+      <p>
+        سيتم قريباً إطلاق قسم خاص بأحدث أخبار الدوريات الكبرى حول العالم
+        <br>
+        بما في ذلك الدوري المصري، الإنجليزي، الإسباني، الإيطالي، الفرنسي، ودوري أبطال أوروبا.
+      </p>
+      <div class="coming-soon">🔜 قريباً على K&A</div>
+    </div>
+  </main>
+
+</body>
+</html>
