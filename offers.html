@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>عرض خاص - سيرفر نوفا - K&A</title>
+
+  <!-- خط Cairo -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #071430;
+      --card: #0f2e5d;
+      --yellow: #e0b303;
+      --yellow-dark: #c6a502;
+    }
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(180deg, var(--bg), #041029 120%);
+      color: #fff;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, var(--yellow), var(--yellow-dark));
+      padding: 18px 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #001a2b;
+      box-shadow: 0 4px 14px rgba(224,179,3,0.7);
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      margin: 40px 20px;
+    }
+    .subscription-card {
+      position: relative;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(224,179,3,0.35);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .subscription-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(224,179,3,0.65);
+    }
+    .badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: red;
+      color: #fff;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .subscription-card h2 {
+      font-size: 1.5rem;
+      color: var(--yellow);
+      margin-bottom: 8px;
+    }
+    .price-old {
+      text-decoration: line-through;
+      color: #bbb;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    .price-new {
+      font-size: 1.5rem;
+      color: #0ff34a;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .btn-whatsapp {
+      background: var(--yellow);
+      color: #001a2b;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .btn-whatsapp:hover {
+      background: var(--yellow-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <header>عرض خاص - IPTV - K&A</header>
+
+  <main>
+    <div class="subscription-card">
+      <div class="badge">عرض خاص</div>
+      <h2>اشتراك سنة</h2>
+      <div class="price-old">450 جنيه</div>
+      <div class="price-new">375 جنيه</div>
+      <p>ساري من 15-8 إلى 18-8</p>
+      <a href="https://wa.me/201113760114" target="_blank" class="btn-whatsapp">تواصل عبر واتساب</a>
+    </div>
+  </main>
+
+</body>
+</html>
