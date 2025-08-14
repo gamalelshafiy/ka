@@ -49,17 +49,21 @@
       transform: translateY(-8px);
       box-shadow: 0 15px 35px rgba(224,179,3,0.65);
     }
+    /* وميض البادج */
+    @keyframes flash {
+      0%, 100% { background-color: red; color: #fff; }
+      50% { background-color: yellow; color: #000; }
+    }
     .badge {
       position: absolute;
       top: 12px;
       left: 12px;
-      background: red;
-      color: #fff;
       font-weight: 700;
       padding: 6px 12px;
       border-radius: 8px;
       font-size: 0.9rem;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: flash 1.2s infinite ease-in-out;
     }
     .subscription-card h2 {
       font-size: 1.5rem;
@@ -95,7 +99,7 @@
 </head>
 <body>
 
-  <header>عرض خاص - IPTV - K&A</header>
+  <header>عرض خاص - سيرفر IPTV </header>
 
   <main>
     <div class="subscription-card">
