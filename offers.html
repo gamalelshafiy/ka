@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>عرض خاص - سيرفر نوفا - K&A</title>
+  <meta name="description" content="عروض حصرية من K&A: اشتراك سنة بـ 375 جنيه، وعرض 2×1 مدى الحياة بـ 250 جنيه فقط!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gamalelshafiy.github.io/ka/offers.html">
+  <title>عروض حصرية - K&A</title>
 
   <!-- خط Cairo -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <style>
     :root {
@@ -14,6 +18,8 @@
       --card: #0f2e5d;
       --yellow: #e0b303;
       --yellow-dark: #c6a502;
+      --green: #0ff34a;
+      --red: #e53e3e;
     }
     body {
       margin: 0;
@@ -21,11 +27,11 @@
       background: linear-gradient(180deg, var(--bg), #041029 120%);
       color: #fff;
       min-height: 100vh;
+      text-align: center;
     }
     header {
       background: linear-gradient(90deg, var(--yellow), var(--yellow-dark));
       padding: 18px 0;
-      text-align: center;
       font-weight: 700;
       font-size: 1.8rem;
       color: #001a2b;
@@ -33,10 +39,13 @@
     }
     main {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      gap: 24px;
       margin: 40px 20px;
+      padding: 0 10px;
     }
-    .subscription-card {
+    .offer-card {
       position: relative;
       background: var(--card);
       border-radius: 16px;
@@ -44,15 +53,16 @@
       text-align: center;
       box-shadow: 0 4px 20px rgba(224,179,3,0.35);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
+      max-width: 400px;
+      width: 100%;
     }
-    .subscription-card:hover {
+    .offer-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 15px 35px rgba(224,179,3,0.65);
     }
-    /* وميض البادج */
     @keyframes flash {
-      0%, 100% { background-color: red; color: #fff; }
-      50% { background-color: yellow; color: #000; }
+      0%, 100% { background-color: #e53e3e; transform: scale(1); }
+      50% { background-color: #f8d000; transform: scale(1.05); }
     }
     .badge {
       position: absolute;
@@ -64,8 +74,9 @@
       font-size: 0.9rem;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       animation: flash 1.2s infinite ease-in-out;
+      color: white;
     }
-    .subscription-card h2 {
+    .offer-card h2 {
       font-size: 1.5rem;
       color: var(--yellow);
       margin-bottom: 8px;
@@ -78,7 +89,7 @@
     }
     .price-new {
       font-size: 1.5rem;
-      color: #0ff34a;
+      color: var(--green);
       font-weight: bold;
       margin-bottom: 20px;
     }
@@ -91,26 +102,78 @@
       text-decoration: none;
       display: inline-block;
       transition: background-color 0.3s ease;
+      margin-top: 10px;
+      font-size: 1.1rem;
     }
     .btn-whatsapp:hover {
       background: var(--yellow-dark);
+    }
+    .features {
+      text-align: right;
+      font-size: 14px;
+      margin-top: 16px;
+      color: #d0d0d0;
+      line-height: 1.8;
+      padding: 0 10px;
+    }
+    .features li {
+      margin-bottom: 6px;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #9fb7d8;
+      margin: 40px 20px;
     }
   </style>
 </head>
 <body>
 
-  <header>عرض خاص - سيرفر IPTV </header>
+  <header>🎉 عروض حصرية من K&A</header>
 
   <main>
-    <div class="subscription-card">
-      <div class="badge">عرض خاص</div>
+
+    <!-- العرض الأول: اشتراك سنة -->
+    <div class="offer-card">
+      <div class="badge">🔥 خصم 17%</div>
       <h2>اشتراك سنة</h2>
       <div class="price-old">450 جنيه</div>
       <div class="price-new">375 جنيه</div>
-      <p>ساري من 15-8 إلى 18-8</p>
-      <a href="https://wa.me/201113760114" target="_blank" class="btn-whatsapp">تواصل عبر واتساب</a>
+      <p>ساري من 15 إلى 18 أغسطس</p>
+      <ul class="features">
+        <li>✅ قنوات رياضية، أفلام، مسلسلات بجودة HD و4K</li>
+        <li>✅ دعم فني على مدار الساعة</li>
+        <li>✅ تثبيت مجاني على الرسيفر أو الهاتف</li>
+        <li>✅ يعمل على جميع الأجهزة</li>
+      </ul>
+      <a href="https://wa.me/201113760114" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+      </a>
     </div>
+
+    <!-- العرض التاني: 2×1 مدى الحياة -->
+    <div class="offer-card">
+      <div class="badge">💥 2×1</div>
+      <h2>اشتراك الشاشات IBO + BOB</h2>
+      <div class="price-old">500 جنيه</div>
+      <div class="price-new">250 جنيه</div>
+      <p>مدى الحياة - من 15 إلى 31 أغسطس</p>
+      <ul class="features">
+        <li>✅مشاهده المباريات بجوده عاليه </li>
+        <li>✅استقرار افضل لامشاهده و بدون تقطيع </li>
+        <li>✅ لا يوجد اشتراكات شهرية بعد</li>
+        <li>✅ تحديثات دورية على القنوات</li>
+      </ul>
+      <a href="https://wa.me/201113760114" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> اشترك الآن
+      </a>
+    </div>
+
   </main>
+
+  <footer>
+    جميع الحقوق © 2025 K&A
+  </footer>
 
 </body>
 </html>
