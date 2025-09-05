@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>📅 مباريات أمس</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#071430;
+      --card:#0f2e5d;
+      --accent:#1e90ff;
+      --muted:#9fb7d8;
+    }
+    body{
+      margin:0;
+      font-family:"Cairo", sans-serif;
+      background:linear-gradient(180deg,var(--bg),#041029 120%);
+      color:#fff;
+    }
+    header{
+      background:linear-gradient(90deg,var(--card),#123a63);
+      padding:14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 4px 12px rgba(0,0,0,0.3);
+    }
+    header h1{
+      margin:0;
+      font-size:20px;
+    }
+    .nav-btns a{
+      text-decoration:none;
+      color:#fff;
+      background:var(--accent);
+      padding:6px 12px;
+      border-radius:8px;
+      margin-left:8px;
+      font-size:14px;
+      font-weight:bold;
+    }
+    main{
+      max-width:900px;
+      margin:20px auto;
+      padding:0 16px;
+    }
+    .matches{
+      display:grid;
+      gap:12px;
+    }
+    .match{
+      background:rgba(255,255,255,0.05);
+      padding:12px;
+      border-radius:10px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    }
+    .teams{font-weight:bold;}
+    .score{font-size:16px; font-weight:bold; color:var(--accent);}
+    .time{color:var(--muted); font-size:13px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📅 مباريات أمس - 4/9/2025</h1>
+    <div class="nav-btns">
+      <a href="index.html">🏠 الرئيسية</a>
+      <a href="javascript:history.back()">↩ رجوع</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="matches">
+      <div class="match">
+        <div class="teams">تشاد × غانا</div>
+        <div class="score">1 - 1</div>
+      </div>
+      <div class="match">
+        <div class="teams">مدغشقر × جمهورية إفريقيا الوسطى</div>
+        <div class="score">2 - 0</div>
+      </div>
+      <div class="match">
+        <div class="teams">جزر القمر × مالي</div>
+        <div class="score">0 - 3</div>
+      </div>
+      <div class="match">
+        <div class="teams">ساو تومي وبرينسيب × إيكواتوريال غينيا</div>
+        <div class="score">2 - 3</div>
+      </div>
+      <div class="match">
+        <div class="teams">ليبيريا × تونس</div>
+        <div class="score">0 - 3</div>
+      </div>
+      <div class="match">
+        <div class="teams">موريتانيا × الرأس الأخضر</div>
+        <div class="score">0 - 2</div>
+      </div>
+      <div class="match">
+        <div class="teams">أنغولا × ليبيا</div>
+        <div class="score">2 - 0</div>
+      </div>
+      <div class="match">
+        <div class="teams">إيسواتيني × الكاميرون</div>
+        <div class="score">0 - 3</div>
+      </div>
+      <div class="match">
+        <div class="teams">سيراليون × غينيا بيساو</div>
+        <div class="score">1 - 1</div>
+      </div>
+      <div class="match">
+        <div class="teams">بوتسوانا × الجزائر</div>
+        <div class="score">1 - 3</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

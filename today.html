@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>📅 مباريات اليوم</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#071430;
+      --card:#0f2e5d;
+      --accent:#1e90ff;
+      --muted:#9fb7d8;
+    }
+    body{
+      margin:0;
+      font-family:"Cairo", sans-serif;
+      background:linear-gradient(180deg,var(--bg),#041029 120%);
+      color:#fff;
+    }
+    header{
+      background:linear-gradient(90deg,var(--card),#123a63);
+      padding:14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 4px 12px rgba(0,0,0,0.3);
+    }
+    header h1{
+      margin:0;
+      font-size:20px;
+    }
+    .nav-btns a{
+      text-decoration:none;
+      color:#fff;
+      background:var(--accent);
+      padding:6px 12px;
+      border-radius:8px;
+      margin-left:8px;
+      font-size:14px;
+      font-weight:bold;
+    }
+    main{
+      max-width:900px;
+      margin:20px auto;
+      padding:0 16px;
+    }
+    .matches{
+      display:grid;
+      gap:12px;
+    }
+    .match{
+      background:rgba(255,255,255,0.05);
+      padding:12px;
+      border-radius:10px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    }
+    .teams{font-weight:bold;}
+    .score{font-size:16px; font-weight:bold; color:var(--accent);}
+    .status{color:var(--muted); font-size:13px;}
+    .live{color:#f0c419; font-weight:bold;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📅 مباريات اليوم - 5/9/2025</h1>
+    <div class="nav-btns">
+      <a href="index.html">🏠 الرئيسية</a>
+      <a href="javascript:history.back()">↩ رجوع</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="matches">
+      <div class="match">
+        <div class="teams">الصومال × غينيا</div>
+        <div class="score">2 - 0</div>
+        <div class="status">✔ انتهت</div>
+      </div>
+      <div class="match">
+        <div class="teams">جنوب السودان × الكونغو الديمقراطية</div>
+        <div class="score">0 - 1</div>
+        <div class="status">✔ انتهت</div>
+      </div>
+      <div class="match">
+        <div class="teams">زامبيا × كينيا</div>
+        <div class="score">0 - 2</div>
+        <div class="status">✔ انتهت</div>
+      </div>
+      <div class="match">
+        <div class="teams">موزمبيق × أوغندا</div>
+        <div class="status">⏰ 19:00</div>
+      </div>
+      <div class="match">
+        <div class="teams">إثيوبيا × بنين</div>
+        <div class="status">⏰ 19:00</div>
+      </div>
+      <div class="match">
+        <div class="teams">زامبياوي × زيمبابوي</div>
+        <div class="status">⏰ 19:00</div>
+      </div>
+      <div class="match">
+        <div class="teams">ليسبوتو × جنوب إفريقيا</div>
+        <div class="status">⏰ 19:00</div>
+      </div>
+      <div class="match">
+        <div class="teams">تونس × موريتانيا</div>
+        <div class="status live">⏳ جاري الآن</div>
+      </div>
+      <div class="match">
+        <div class="teams">السنغال × السودان</div>
+        <div class="status live">⏳ جاري الآن</div>
+      </div>
+      <div class="match">
+        <div class="teams">غامبيا × مالاوي</div>
+        <div class="status live">⏳ جاري الآن</div>
+      </div>
+      <div class="match">
+        <div class="teams">ساحل العاج × بوروندي</div>
+        <div class="status">⏰ 22:00</div>
+      </div>
+      <div class="match">
+        <div class="teams">جيبوتي × بوركينا فاسو</div>
+        <div class="status">⏰ 22:00</div>
+      </div>
+      <div class="match">
+        <div class="teams">مصر × نيجيريا</div>
+        <div class="status">⏰ 22:00</div>
+      </div>
+      <div class="match">
+        <div class="teams">ليبيا × تنزانيا</div>
+        <div class="status">⏰ 22:00</div>
+      </div>
+      <div class="match">
+        <div class="teams">المغرب × النيجر</div>
+        <div class="status">⏰ 22:00</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

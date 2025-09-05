@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مباريات K&A</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #0b1d3a;
+      margin: 0;
+      padding: 0;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 28px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .nav-buttons a {
+      background-color: #1e3a5f;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #29558a;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #1e3a5f;
+      padding: 20px;
+      border-radius: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-buttons">
+    <a href="index.html">🏠 الرئيسية</a>
+    <a href="javascript:history.back()">⬅️ السابق</a>
+  </div>
+
+  <h1>مباريات K&A</h1>
+
+  <div class="container">
+    <div class="card">
+      <a href="yesterday.html" style="text-decoration: none; color: white;">
+        <p>📅 مباريات أمس</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="today.html" style="text-decoration: none; color: white;">
+        <p>⚽ مباريات اليوم</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="tomorrow.html" style="text-decoration: none; color: white;">
+        <p>⏳ مباريات الغد</p>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
